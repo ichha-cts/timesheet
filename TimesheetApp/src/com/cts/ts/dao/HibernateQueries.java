@@ -39,6 +39,12 @@ public class HibernateQueries {
 			user2.setOrganization("CTS");
 			user2.setScrum("Alpha");
 			
+			User user3 = new User();
+			user3.setName("bbb");
+			user3.setEmailID("bbb@bbb.com");
+			user3.setOrganization("CTS");
+			user3.setScrum("Alpha");
+			
 			session.save(user);
 			System.out.println("INSERT SUCCESSFUL !!!!!");
 			tx.commit();
